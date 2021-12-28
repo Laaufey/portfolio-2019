@@ -1,0 +1,209 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-areas:
+        "header header header header header"
+        ". main main main ."
+        ". aside aside aside ."
+        ". side middle1 right1 ."
+        ". footer footer footer .";
+    grid-gap: 20px;
+}
+
+footer{
+    grid-area: footer;
+
+}
+
+/* NAVIGATIONBAR */
+.DD {
+    display: none;
+}
+.logo {
+    height: 90px;
+    width: 90px;
+    padding: 10px;
+    margin-left: 20px;
+    float: left;
+}
+
+nav a {
+    font-family: 'Kiona', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#header {
+    grid-area: header;
+
+}
+
+nav a:hover {
+    color: pink;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    float: left;
+    height: 130px;
+}
+
+#nav {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    align-content: space-around;
+    height: 130px;
+    margin: 0;
+    padding-right: 80px;
+    float: right;
+
+}
+
+li a {
+    display: inline-block;
+    padding: 35px;
+    font-size: 17px;
+    color: black;
+}
+
+#logome {
+    margin: 0 auto;
+    text-align: center;
+    grid-area: main;
+    margin-top: 3vh;
+}
+
+.me {
+    display: block;
+    margin: auto;
+    width: 30vw;
+    height: auto;
+    text-align: center;
+}
+
+.me:hover {
+    opacity: 50%;
+}
+
+.text {
+    margin: 0 auto;
+    text-align: center;
+    grid-area: aside;
+}
+
+.aboutme{
+
+    margin: 0 auto;
+    text-align: center;
+    grid-area: side;
+}
+.aboutme2{
+
+    margin: 0 auto;
+    text-align: center;
+    grid-area: middle1;
+}
+.aboutme3{
+
+    margin: 0 auto;
+    text-align: center;
+    grid-area: right1;
+}
+
+h1,
+h3,
+h4 {
+    font-family: 'Kiona', sans-serif;
+}
+
+
+@media (max-width: 850px) {
+        .nav {
+        display: none;
+    }
+
+    .DD {
+        display: inline-block;
+        float: right;
+        font-size: 17px;
+        color: black;
+    }
+    li {
+        display: inline-block;
+    }
+    
+    ul li {
+        position: relative;
+    }
+
+
+    ul li ul {
+        display: none;
+        position: absolute;
+        top: 55px;
+        left: -38px;
+    }
+    
+    ul li:hover ul{
+        display: block;
+    }
+
+    .dropdown-content li {
+        display: block;
+        background-color: white;
+    } 
+}
+
+@media (max-width: 630px) {
+     ul{
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 450px) {}
+
+/* ABOUT ME 
+.topnav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    background-color: white;
+    font-family: 'Thinoo';
+    align-content: space-around;
+    height: 11.2vh;
+    padding-right: 80px;
+    margin: 0;
+    align-items: center;
+}
+
+.toplogo {
+    width: 7vw;
+}
+
+li {
+    padding: 35px;
+    font-size: 20px;
+    display: inline-block;
+       cursor: pointer;
+}
+
+*/
+
+/* FONTS */
+@font-face {
+    font-family: 'Kiona';
+    src: local('Kiona-Regular'), url('Kiona-Regular.ttf') format('ttf');
+}

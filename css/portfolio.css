@@ -1,0 +1,239 @@
+* {}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header header"
+        "web ux"
+        "animation content"
+        "footer footer";
+    margin: 0 auto;
+
+}
+
+/* NAVIGATIONBAR */
+.DD {
+    display: none;
+}
+
+.logo {
+    height: 90px;
+    width: 90px;
+    padding: 10px;
+    margin-left: 20px;
+    float: left;
+}
+
+nav a {
+    font-family: 'Kiona', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#header {
+    grid-area: header;
+
+}
+
+nav a:hover {
+    color: pink;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    float: left;
+    height: 130px;
+}
+
+#nav {
+    float: right;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    align-content: space-around;
+    height: 130px;
+    margin: 0;
+    padding-right: 80px;
+    float: right;
+
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    padding: 35px;
+    font-size: 17px;
+    color: black;
+}
+
+/* PAGE 1 */
+
+#page1 {
+    grid-area: web;
+    background-color: orange;
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/web-dark.jpg);
+    margin-top: -35px;
+}
+
+/* HOVER */
+#page1:hover {
+    background-image: url(../images/web%20copy.jpg);
+    transition: 2s;
+}
+
+#page2:hover {
+    background-image: url(../images/uxx.jpg);
+    transition: 2s;
+}
+
+#page3:hover {
+    background-image: url(../images/animat.jpg);
+    transition: 2s;
+}
+
+#page4:hover {
+    background-image: url(../images/conten.jpg);
+    transition: 2s;
+}
+
+/* PAGE 2 */
+
+#page2 {
+    grid-area: ux;
+    background-color: skyblue;
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/ux-dark.jpg);
+    margin-top: -35px;
+}
+
+/* PAGE 3 */
+
+#page3 {
+    grid-area: animation;
+    background-color: pink;
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/animation-dark.jpg);
+    margin-top: -70px;
+
+}
+
+
+/* PAGE 4 */
+
+#page4 {
+    grid-area: content;
+    background-color: gray;
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/content-dark.jpg);
+    margin-top: -70px;
+
+}
+
+/* FONTS */
+h1 {
+    font-family: 'Kiona', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 15%;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+
+@media (max-width: 850px) {
+
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "web"
+            "ux"
+            "animation"
+            "content"
+            "footer";
+        margin: 0 auto;
+
+    }
+
+
+    .nav {
+        display: none;
+    }
+
+    .DD {
+        display: inline-block;
+        float: right;
+        font-size: 17px;
+        color: black;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    ul li {
+        position: relative;
+    }
+
+
+    ul li ul {
+        display: none;
+        position: absolute;
+        top: 55px;
+        left: -38px;
+    }
+
+    ul li:hover ul {
+        display: block;
+    }
+
+    .dropdown-content li {
+        display: block;
+        background-color: white;
+    }
+
+
+
+}
+
+@media (max-width: 630px) {
+    h1{
+        font-size: 40px;
+    }
+    ul{
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+      h1{
+        font-size: 30px;
+    }
+}
+
+@font-face {
+    font-family: 'Kiona';
+    src: local('Kiona-Regular'), url('Kiona-Regular.ttf') format('ttf');
+}

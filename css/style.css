@@ -1,0 +1,169 @@
+   /* FONTS */
+   @font-face {
+       font-family: 'Kiona';
+       src: local('Kiona-Regular'), url('Kiona-Regular.ttf') format('ttf');
+   }
+
+   /* KEYFRAMES */
+   @keyframes animate {
+       0% {
+           background-position: -500%;
+       }
+
+       100% {
+           background-position: 500%;
+       }
+   }
+
+   body {
+       background-color: #F776AE;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-areas:
+           "header header header"
+           "main main main"
+           ". aside ."
+           ". side .";
+
+   }
+
+   /* HOME PAGE */
+   .logo {
+       text-align: center;
+       margin-bottom: 0;
+       grid-area: header;
+       margin-top: 50px;
+
+   }
+
+   .name {
+       font-size: 5em;
+       margin: 5px;
+       margin-bottom: 30px;
+       color: #FFFFFF;
+       grid-area: main;
+       text-align: center;
+       font-family: 'Kiona';
+       text-transform: uppercase;
+       letter-spacing: 25px;
+       overflow: hidden;
+       background: linear-gradient(90deg, white, white, white);
+       background-repeat: no-repeat;
+       background-size: 80%;
+       animation: animate 6s linear infinite;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: rgba(255, 255, 255, 0);
+   }
+
+   .buttons {
+       text-decoration: none;
+       list-style-type: none;
+       margin: auto;
+       text-align: center;
+
+   }
+
+   .button1 {
+       text-decoration: none;
+       text-align: center;
+       margin: 5px;
+       grid-area: aside;
+
+   }
+
+   .button2 {
+       text-decoration: none;
+       text-align: center;
+       margin: 5px;
+       grid-area: side;
+   }
+
+   a {
+       text-decoration: none;
+       color: white;
+
+   }
+
+   li {
+       font-family: 'Kiona';
+       font-size: 3em;
+       color: #FFFFFF;
+       list-style-type: none;
+       cursor: pointer;
+            text-align: center;
+
+   }
+
+   li:hover {
+       opacity: 50%;
+   }
+
+/* ABOUT ME */
+.topnav{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+  /*  list-style-type: none;*/
+  display: flex;
+  /*  text-transform: uppercase;*/
+
+   align-content: space-around;
+ height: 11.2vh;
+    padding-right: 4vw;
+}
+.toplogo{
+   width: 10vw;
+}
+
+
+
+   @media (max-width: 1100px) {
+       /* HOME PAGE */
+
+
+   }
+
+   @media (max-width: 850px) {
+
+       /* HOME PAGE */
+       body {
+           display: grid;
+           grid-template-columns: 1fr 5fr 1fr;
+           grid-template-areas:
+               "header header header"
+               "main main main"
+               ". aside ."
+               ". side .";
+       }
+
+       .button1,
+       .button2 {
+           font-size: 15px;
+                text-align: center;
+       }
+
+       .name {
+           font-size: 3em;
+           letter-spacing: 15px;
+
+       }
+
+   }
+   @media (max-width: 630px) {
+
+       /* HOME PAGE */
+
+        ul{
+        padding-right: 20px;
+    }
+
+   }
+
+   @media (max-width: 450px) {
+
+       /* HOME PAGE */
+
+
+   }

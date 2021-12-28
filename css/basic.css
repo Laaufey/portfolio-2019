@@ -1,0 +1,423 @@
+/* NAVIGATIONBAR */
+body {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-areas:
+        "header header header header"
+        ". title title ."
+        ". p1 p2 ."
+        ". p3 p4 ."
+        ". p5 p5."
+        ". p7 p7 ."
+        ". footer footer .";
+    grid-gap: 30px;
+    margin: 0 auto;
+}
+
+/* NAVIGATIONBAR */
+.logo {
+    height: 90px;
+    width: 90px;
+    padding: 10px;
+    margin-left: 20px;
+    float: left;
+}
+
+
+nav a {
+    font-family: 'Kiona', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#header {
+    grid-area: header;
+
+}
+
+nav a:hover {
+    color: pink;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    float: left;
+    height: 130px;
+}
+
+.nav {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    align-content: space-around;
+    height: 130px;
+    margin: 0;
+    padding-right: 80px;
+    float: right;
+}
+
+li a {
+    display: inline-block;
+    padding: 35px;
+    font-size: 17px;
+    color: black;
+}
+
+.DD {
+    display: none;
+}
+
+/* PAGES */
+#title-page {
+    grid-area: title;
+
+}
+
+#title-page2 {
+    margin-top: 50px;
+    grid-area: title2;
+}
+
+#title-page3 {
+    margin-top: 50px;
+    grid-area: title3;
+}
+
+#title-page4 {
+    margin-top: 50px;
+    grid-area: title4;
+}
+
+#page1 {
+    grid-area: p1;
+}
+
+#page2 {
+    grid-area: p2;
+}
+
+#page3 {
+    grid-area: p3;
+}
+
+#page4 {
+    grid-area: p4;
+}
+
+#page5 {
+    grid-area: p5;
+}
+
+#page6 {
+    grid-area: p6;
+}
+
+#page7 {
+    grid-area: p7;
+}
+
+#page8 {
+    grid-area: p8;
+}
+
+#page9 {
+    grid-area: p9;
+}
+
+#page10 {
+    grid-area: p10;
+}
+
+#page11 {
+    grid-area: p11;
+}
+
+#page12 {
+    grid-area: p12;
+}
+
+#page13 {
+    grid-area: p13;
+}
+
+#page14 {
+    grid-area: p14;
+}
+
+#page15 {
+    grid-area: p15;
+}
+
+#page16 {
+    grid-area: p16;
+}
+
+#page17 {
+    grid-area: p17;
+}
+
+#page18 {
+    grid-area: p18;
+}
+
+#page19 {
+    grid-area: p19;
+}
+
+#page20 {
+    grid-area: p20;
+}
+
+#page21 {
+    grid-area: p21;
+}
+
+#page22 {
+    grid-area: p22;
+}
+
+#page23 {
+    grid-area: p23;
+}
+
+#page24 {
+    grid-area: p24;
+}
+
+#page25 {
+    grid-area: p25;
+}
+
+#page26 {
+    grid-area: p26;
+}
+
+#page27 {
+    grid-area: p27;
+}
+
+#page28 {
+    grid-area: p28;
+}
+
+#page29 {
+    grid-area: p29;
+}
+
+#page30 {
+    grid-area: p30;
+}
+
+#page31 {
+    grid-area: p31;
+}
+
+#page32 {
+    grid-area: p32;
+}
+
+/* SLIDESHOWS */
+
+@keyframes slideshow {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+#slider{
+    overflow: hidden;
+}
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+#slider figure {
+    width: 500%;
+    animation: 20s slideshow infinite;
+    position: relative;
+    margin: 0;
+    grid-area: p1;
+}
+
+
+/* FONTS */
+h1 {
+    font-family: 'Kiona', sans-serif;
+    font-size: 7vh;
+
+}
+
+h2 {
+    font-family: 'Kiona', sans-serif;
+    font-size: 4vh;
+    margin: 0;
+
+}
+
+.button {
+    text-decoration: none;
+    color: black;
+    margin-top: -10px;
+}
+
+.button:hover {
+    color: pink;
+}
+
+h2:after {
+    content: "";
+    display: block;
+    width: 30%;
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+}
+
+h3 {
+    font-family: 'Zing';
+    font-size: 3vh;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    font-size: 2vh;
+    font-family: sans-serif;
+    font-weight: 200;
+
+}
+
+@font-face {
+    font-family: 'Kiona';
+    src: local('Kiona-Regular'), url('Kiona-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Zing';
+    src: local('ZingScriptRustSBDemo-Base'), url('ZingScriptRustSBDemo-Base.otf') format('otf');
+}
+
+@media (max-width: 850px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 7fr 1fr;
+        grid-template-areas:
+            "header header header"
+            ". title ."
+            ". p1 ."
+            ". p2 ."
+            ". p3 ."
+            ". p4 ."
+            ". p5 ."
+            ". p6 ."
+            ". p7 ."
+
+            ". footer .";
+        grid-gap: 20px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .DD {
+        display: inline-block;
+        float: right;
+        font-size: 17px;
+        color: black;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    ul li {
+        position: relative;
+    }
+
+
+    ul li ul {
+        display: none;
+        position: absolute;
+        top: 55px;
+        left: -38px;
+    }
+
+    ul li:hover ul {
+        display: block;
+    }
+
+    .dropdown-content li {
+        display: block;
+        background-color: white;
+    }
+
+    h1 {
+        font-size: 6vh;
+    }
+
+    h2 {
+        font-size: 3.7vh;
+    }
+}
+
+@media (max-width: 630px) {
+
+
+
+    ul {
+        padding-right: 20px;
+    }
+
+    h1 {
+        font-size: 5vh;
+    }
+
+    h2 {
+        font-size: 3vh;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        grid-gap: 15px;
+    }
+}
